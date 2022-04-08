@@ -1,0 +1,12 @@
+[package]
+name = "macho-stubs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.56"
+memchr = "2.4.1"
+object = { version = "0.28.3", features = ["read", "macho", "unaligned"] }
